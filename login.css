@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    background-color: black;
+}
+a{
+    color:white;
+    text-decoration:none ;
+}
+.container{
+    display:grid;
+    grid-template-rows:130px auto auto auto;
+}
+/* NAVBAR----------------------------------------------------------------------------------------------------------------- */
+.navbar{
+    background:black;
+    display:grid;
+    color:white;
+    flex-direction: column;
+    align-items: center;
+}
+.menu {
+ list-style: none;
+ display:flex;
+ height: 60px;
+
+}  
+.menuch{
+    margin-left:30px
+}
+/* Login container----------------------------------------------------------------------------------------------------------------- */
+.login-container{
+  display:grid;
+  grid-template-columns:600px 800px ;
+  justify-content: center;
+}
+.useless-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 650px;
+    max-width:600px;
+    width: 100%;
+    margin-top:100px;
+    border-top:5px solid grey;
+    border-left:5px solid grey;
+    border-bottom:5px solid grey;
+    border-right:5px solid black;
+}
+
+.login-box{
+    height: 650px;
+    max-width:800px;
+    width: 100%;
+    margin-top:100px;
+    border-top:5px solid grey;
+    border-right:5px solid grey;
+    border-bottom:5px solid grey;
+    border-left:1px solid white;
+    display:grid;
+    grid-template-rows: 160px auto 100px ;
+
+
+}
+.text{
+    display:flex;
+    color:white;
+    text-align:center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.form{
+    color:white;
+    width:100%;
+    display:grid;
+    grid-template-columns: 100px 600px; 
+    /* use a maxmin here */
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    grid-column-gap: 50px;
+
+}
+input{
+    height: 20px;
+    border-radius: 5px;
+}
+p{
+    font-size:20px
+}
+.buttons{
+       display:flex;
+       justify-content: center;
+       align-items:center;
+}
+.buttonz{
+    margin:60px;
+    width:100px;
+    height:50px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 15px;
+    cursor: pointer;
+    border:5px solid black;
+}
+@media only screen and (max-width: 500px) {
+    .useless-box {
+        display: none;
+    }
+    .login-container{
+        display:grid;
+        grid-template-columns: 800px ;
+        justify-content: center;
+    }
+}
